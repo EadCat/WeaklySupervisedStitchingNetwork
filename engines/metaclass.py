@@ -68,6 +68,8 @@ from networks.models.PreColorCorNet import PreColorCorNet
 from networks.models.PostColorCorNet import PostColorCorNet
 from networks.models.DoubleColorCorNet import DoubleColorCorNet
 
+from utils.cuda import optimizer_to
+
 
 def model_construction(build_function):
     """
@@ -158,7 +160,8 @@ class MetaEngine:
         :param timeset: Set Epoch or Not
         """
         if load_dir is None: return
-        device = torch.device(rank)
+        if self.gpu: device = torch.device(rank)
+        else: device = torch.device('cpu')
         load_dict = torch.load(load_dir, map_location=device)
         epoch = load_dict.get('epoch')
         iteration = load_dict.get('iter')
@@ -179,6 +182,7 @@ class MetaEngine:
 
         if optimizer is not None:
             optimizer.load_state_dict(load_dict['optim'])
+            if self.gpu: optimizer_to(optimizer, device)
             if rank == 0:
                 print("===================================================")
                 print(f"Optimizer has been loaded from {load_dir}.")

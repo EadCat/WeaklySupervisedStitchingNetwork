@@ -9,3 +9,6 @@ _site
 Gemfile.lock
 vendor
 .idea
+demo
+archive
+__pycache__
