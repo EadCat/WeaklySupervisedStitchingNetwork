@@ -58,16 +58,17 @@ sh scripts/test-final.sh
 # 02. Global Homography Only (W/O Local Adj.)
 sh scripts/test-homography.sh
 
-# 03. IEEE SPL 2021 E2E Stitching (from https://github.com/EadCat/EEISN_SPL21)
+# 03. Without Color Correction
+(https://ieeexplore.ieee.org/document/9393563)
 sh scripts/test-spl.sh
 
-# 04. Pre-color correction (W/O Post-Color Correction)
+# 04. Pre-color Correction (W/O Post-Color Correction)
 sh scripts/test-pre.sh
 
-# 05. Post-color correction (W/O Pre-Color Correction)
+# 05. Post-color Correction (W/O Pre-Color Correction)
 sh scripts/test-post.sh
 
-# 06. Final Model trained with L1(Pixel-wise) Loss
+# 06. Final Model Trained with L1(Pixel-wise) Loss
 sh scripts/test-L1.sh
 ```
 
@@ -83,7 +84,7 @@ sh scripts/test-L1.sh
 @article{song2021end,
   title={End-to-End Image Stitching Network via Multi-Homography Estimation},
   author={Song, Dae-Young and Um, Gi-Mun and Lee, Hee Kyung and Cho, Donghyeon},
-  journal={IEEE Signal Processing Letters},
+  journal={IEEE Signal Processing Letters (SPL)},
   volume={28},
   pages={763--767},
   year={2021},
