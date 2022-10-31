@@ -50,7 +50,7 @@ Network Checkpoints: [Google Drive (3.9G)](https://drive.google.com/file/d/1AZr8
 # Example 3: --gpu 0  (Single GPU)
 # Check "options.py" for more details.
 
-All models below use single homography for one input
+All models below use single homography for one input.
 
 # 01. Final Model
 sh scripts/test-final.sh
@@ -75,8 +75,8 @@ sh scripts/test-L1.sh
 ### CITATION
 ```
 @InProceedings{Song2022Weakly,
-    author = {Song, Dae-Young and Lee, Geonsoo and Lee, HeeKyung and Um, Gi-Mun and Cho, Donghyeon},
-    title = {Weakly-Supervised Stitching Network for Real-World Panoramic Image Generation},
+    author={Song, Dae-Young and Lee, Geonsoo and Lee, HeeKyung and Um, Gi-Mun and Cho, Donghyeon},
+    title={Weakly-Supervised Stitching Network for Real-World Panoramic Image Generation},
     journal={European Conference on Computer Vision (ECCV)},
     year={2022}
 }
