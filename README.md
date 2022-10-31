@@ -31,7 +31,7 @@ conda activate wssn
 sh env.sh
 ```
 
-### Download
+### DOWNLOAD
 ```
 sh download.sh
 ```
