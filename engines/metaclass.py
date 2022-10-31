@@ -160,9 +160,8 @@ class MetaEngine:
         :param timeset: Set Epoch or Not
         """
         if load_dir is None: return
-        if self.gpu: device = torch.device(rank)
-        else: device = torch.device('cpu')
-        load_dict = torch.load(load_dir, map_location=device)
+
+        load_dict = torch.load(load_dir, map_location=self.device)
         epoch = load_dict.get('epoch')
         iteration = load_dict.get('iter')
 
@@ -182,7 +181,7 @@ class MetaEngine:
 
         if optimizer is not None:
             optimizer.load_state_dict(load_dict['optim'])
-            if self.gpu: optimizer_to(optimizer, device)
+
             if rank == 0:
                 print("===================================================")
                 print(f"Optimizer has been loaded from {load_dir}.")
