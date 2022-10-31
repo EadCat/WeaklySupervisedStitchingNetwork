@@ -45,8 +45,8 @@ Network Checkpoints: [Google Drive (3.9G)](https://drive.google.com/file/d/1AZr8
 ### DEMO
 ```
 # If you want to use your own GPU, set the following options:
-# Example 1: --gpu 0,1,2,3 --world-size 4 --npgpu 4  (DDP)
-# Example 2: --gpu 2,3 --world-size 2 --npgpu 2  (DDP)
+# Example 1: --gpu 0 1 2 3 --world-size 4 --npgpu 4  (DDP)
+# Example 2: --gpu 2 3 --world-size 2 --npgpu 2  (DDP)
 # Example 3: --gpu 0  (Single GPU)
 # Check "options.py" for more details.
 
