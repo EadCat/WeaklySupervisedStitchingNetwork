@@ -50,7 +50,7 @@ Network Checkpoints: [Google Drive (3.9G)](https://drive.google.com/file/d/1AZr8
 # Example 3: --gpu 0  (Single GPU)
 # Check "options.py" for more details.
 
-All models below use single homography for one input.
+# All models below use single homography for one input.
 
 # 01. Final Model
 sh scripts/test-final.sh
