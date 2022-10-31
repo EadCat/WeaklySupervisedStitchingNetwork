@@ -22,7 +22,7 @@
     <sup>2</sup> Electronics and Telecommunications Research Institute (ETRI)
 </p>
 
-An Official PyTorch Implementation of [Weakly-Supervised Stitching Network for Real-World Panoramic Image Generation](https://arxiv.org/abs/2209.05968). 
+An Official PyTorch Implementation of [Weakly-Supervised Stitching Network for Real-World Panoramic Image Generation](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136760052.pdf). 
 
 ### INSTALLATION
 ```
@@ -94,6 +94,7 @@ sh scripts/test-L1.sh
 
 ### LICENSE
 Data dual License -  CC BY-NC-ND 4.0, Commercial License
+
 Source dual License - BSD-3-Clause License, Commercial License
 
 ### CONTACT
