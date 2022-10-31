@@ -78,7 +78,9 @@ sh scripts/test-L1.sh
     author={Song, Dae-Young and Lee, Geonsoo and Lee, HeeKyung and Um, Gi-Mun and Cho, Donghyeon},
     title={Weakly-Supervised Stitching Network for Real-World Panoramic Image Generation},
     journal={European Conference on Computer Vision (ECCV)},
-    year={2022}
+    pages={54--71},
+    year={2022},
+    organization={Springer}
 }
 
 @article{song2021end,
