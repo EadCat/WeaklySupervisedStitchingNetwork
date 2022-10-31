@@ -51,6 +51,7 @@ Network Checkpoints: [Google Drive (3.9G)](https://drive.google.com/file/d/1AZr8
 # Check "options.py" for more details.
 
 # All models below use single homography for one input.
+# The default setting for the shell scripts below are 'CPU'.
 
 # 01. Final Model
 sh scripts/test-final.sh
