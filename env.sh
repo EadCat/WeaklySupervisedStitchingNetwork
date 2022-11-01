@@ -1,5 +1,5 @@
 echo "Installing $(tput setaf 1)PyTorch$(tput sgr0) ..."
-conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch -y
+conda install pytorch=1.12.1 torchvision=0.13.1 cudatoolkit=11.3 -c pytorch -y
 echo "Installing $(tput setaf 2)Matplotlib$(tput sgr0) ..."
 conda install matplotlib==3.5.1 -y
 echo "Installing $(tput setaf 3)imgaug$(tput sgr0) ..."

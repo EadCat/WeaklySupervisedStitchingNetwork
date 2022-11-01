@@ -23,10 +23,12 @@ python train.py \
 --strict True \
 --smart True \
 --gpu 0 1 2 3 \
+--npgpu 4 \
+--world-size 4 \
 --dataroot /home/user/SSD/ECCV-Split/ \
 --train-datalist /home/user/SSD/ECCV-Split/erp_train_triple_woc.txt \
---batch-size 2 \
---num-workers 4 \
+--batch-size 3 \
+--num-workers 10 \
 --shuffle True \
 --pin-memory True \
 --transform resize normalize augment \

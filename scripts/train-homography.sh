@@ -33,5 +33,4 @@ python train.py \
 --resize 512 1024 \
 --mean 0.5 0.5 0.5 \
 --std 0.5 0.5 0.5 \
---aug-prob 0.5 \
---load-dir ./archive/02-homography/weights/HomoDispNet-001.pth
+--aug-prob 0.5

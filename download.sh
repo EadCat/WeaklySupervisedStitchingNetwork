@@ -10,7 +10,7 @@ echo "Download Complete."
 cd demo
 echo "Unzip files..."
 unzip Demo.zip
-mkdir ckpt
-unzip checkpoints.zip -d ./ckpt
+mkdir ckpts
+unzip checkpoints.zip -d ./ckpts
 echo "Unzip Complete."
 cd ..

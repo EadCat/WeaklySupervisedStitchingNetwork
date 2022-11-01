@@ -68,8 +68,6 @@ from networks.models.PreColorCorNet import PreColorCorNet
 from networks.models.PostColorCorNet import PostColorCorNet
 from networks.models.DoubleColorCorNet import DoubleColorCorNet
 
-from utils.cuda import optimizer_to
-
 
 def model_construction(build_function):
     """
