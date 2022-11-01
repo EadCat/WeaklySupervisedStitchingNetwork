@@ -196,8 +196,8 @@ class MetaStitcher(BaseNet):
         img = denormalizer(img, 1.)
         img = img + color_map * img * (1 - img)  # I + aI(1-I)
         img = self.normalizer(img)
-        if 'normalize' in self.opt.transform:
-            img = normalizer(img, self.opt.mean, self.opt.std)
+        # if 'normalize' in self.opt.transform:
+        #     img = normalizer(img, self.opt.mean, self.opt.std)
         return img
 
 
