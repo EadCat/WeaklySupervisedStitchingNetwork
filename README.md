@@ -43,13 +43,6 @@ Dataset for Demo: [Google Drive (651M)](https://drive.google.com/file/d/1p27k77T
 Network Checkpoints: [Google Drive (3.9G)](https://drive.google.com/file/d/1AZr8eQa2m3fBkbb9t8MsWt-inbNwVVez/view?usp=sharing)
 
 
-### NOTE
-2022-11-01 Fix
-- PyTorch version issue -> 1.12.1 / cudatoolkit -> 11.3
-- Download shell script
-- checkpoint loading device
-
-
 ### DEMO
 ```
 # If you want to use your own GPU, set the following options:
@@ -102,6 +95,13 @@ sh scripts/test-L1.sh
   publisher={IEEE}
 }
 ```
+
+### NOTE
+2022-11-01 Fix
+- PyTorch version issue -> 1.12.1 / cudatoolkit -> 11.3
+- Download shell script
+- checkpoint loading device
+- redundant normalization of the color-correction
 
 ### LICENSE
 Data dual License -  CC BY-NC-ND 4.0, Commercial License
